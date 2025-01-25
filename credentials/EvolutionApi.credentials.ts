@@ -16,7 +16,7 @@ export class EvolutionApi implements ICredentialType {
 			type: 'string',
 			default: '',
 			placeholder: 'https://exemplo.com',
-			description: 'Digite a URL completa da sua Evolution API (ex: https://api.exemplo.com)',
+			description: 'Enter the complete URL of your Evolution API (e.g., https://api.example.com)',
 		},
 		{
 			displayName: 'ApiKey',
@@ -26,7 +26,7 @@ export class EvolutionApi implements ICredentialType {
 			typeOptions: {
 				password: true,
 			},
-			description: 'Digite a ApiKey da Instancia ou Global da sua Evolution API',
+			description: 'Enter the ApiKey of the Instance or Global of your Evolution API',
 		},
 	];
 

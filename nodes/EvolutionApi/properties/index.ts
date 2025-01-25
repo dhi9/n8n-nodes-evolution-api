@@ -13,22 +13,23 @@ import { chatFields } from './chat.fields';
 import { chatOperations } from './chat.operations';
 import { profileFields } from './profile.fields';
 import { profileOperationsOptions } from './profile.operations';
+
 const resourcesOptions: INodeProperties = {
-	displayName: 'Recurso',
+	displayName: 'Resource',
 	name: 'resource',
 	type: 'options',
 	noDataExpression: true,
 	options: [
 		{
-			name: 'Instancia',
+			name: 'Instance',
 			value: 'instances-api',
 		},
 		{
-			name: 'Mensagem',
+			name: 'Message',
 			value: 'messages-api',
 		},
 		{
-			name: 'Grupo',
+			name: 'Group',
 			value: 'groups-api',
 		},
 		{
@@ -36,15 +37,15 @@ const resourcesOptions: INodeProperties = {
 			value: 'chat-api',
 		},
 		{
-			name: 'Perfil',
+			name: 'Profile',
 			value: 'profile-api',
 		},
 		{
-			name: 'Evento',
+			name: 'Event',
 			value: 'events-api',
 		},
 		{
-			name: 'Integração',
+			name: 'Integration',
 			value: 'integrations-api',
 		},
 	],
@@ -53,21 +54,21 @@ const resourcesOptions: INodeProperties = {
 
 export const evolutionNodeProperties = [
 	resourcesOptions,
-	// Funções disponíveis quando selecionado o recurso "Instancias"
+	// Available functions when "Instances" resource is selected
 	instancesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Mensagens"
+	// Available functions when "Messages" resource is selected
 	messagesOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Grupos"
+	// Available functions when "Groups" resource is selected
 	groupsOperations,
-	// Funções disponíveis quando selecionado o recurso "Eventos"
+	// Available functions when "Events" resource is selected
 	eventsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Integrações"
+	// Available functions when "Integrations" resource is selected
 	integrationsOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Perfil"
+	// Available functions when "Profile" resource is selected
 	profileOperationsOptions,
-	// Funções disponíveis quando selecionado o recurso "Chat"
+	// Available functions when "Chat" resource is selected
 	chatOperations,
-	// Campos disponíveis quando selecionado o recurso e alguma operação
+	// Available fields when resource and operation are selected
 	...instancesFields,
 	...messagesFields,
 	...groupsFields,
