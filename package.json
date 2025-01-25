@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-evolution-api",
+  "name": "n8n-nodes-evolution-api-en",
   "version": "1.0.2",
-  "description": "Api não oficial do WhatsApp",
+  "description": "Unofficial WhatsApp API Node for n8n (English Translation) translated from n8n-nodes-evolution-api",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "OrionDesign",
-    "email": "contato@oriondesign.art.br"
+    "name": "dhi9",
+    "email": "rizkyadhicom+npmjs.com@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oriondesign2015/n8n-nodes-evolution-api.git"
+    "url": "https://github.com/dhi9/n8n-nodes-evolution-api-en.git"
   },
   "engines": {
     "node": ">=18.10",
