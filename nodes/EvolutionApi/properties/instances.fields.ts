@@ -54,6 +54,73 @@ export const instancesFields: INodeProperties[] = [
 		default: {},
 		options: [
 			{
+				displayName: 'Behavior',
+				name: 'instanceSettings',
+				type: 'fixedCollection',
+				typeOptions: {
+					multipleValues: false,
+				},
+				default: { settings: {} },
+				options: [
+					{
+						displayName: 'Instance Behavior',
+						name: 'settings',
+						values: [
+							{
+								displayName: 'Reject Calls',
+								name: 'rejectCall',
+								type: 'boolean',
+								default: false,
+								description: 'Whether to automatically reject incoming calls',
+							},
+							{
+								displayName: 'Message on Reject',
+								name: 'msgCall',
+								type: 'string',
+								default: '',
+								description: 'Whether to send a message after rejecting a call, and if so, what message',
+							},
+							{
+								displayName: 'Ignore Groups',
+								name: 'groupsIgnore',
+								type: 'boolean',
+								default: false,
+								description: 'Whether to ignore messages from groups',
+							},
+							{
+								displayName: 'Always Online',
+								name: 'alwaysOnline',
+								type: 'boolean',
+								default: false,
+								description: 'Whether to keep the status always set to Online',
+							},
+							{
+								displayName: 'Read Messages',
+								name: 'readMessages',
+								type: 'boolean',
+								default: false,
+								description: 'Whether to automatically mark messages as read',
+							},
+							{
+								displayName: 'Read Status',
+								name: 'readStatus',
+								type: 'boolean',
+								default: false,
+								description: 'Whether to allow the API to view the Status of added contacts',
+							},
+							{
+								displayName: 'Sync History',
+								name: 'syncFullHistory',
+								type: 'boolean',
+								default: false,
+								description: 'Whether to synchronize the full message history with the API',
+							},
+						],
+					},
+				],
+				description: 'Instance behavior',
+			},
+			{
 				displayName: 'Chatwoot',
 				name: 'chatwoot',
 				type: 'fixedCollection',
@@ -165,73 +232,6 @@ export const instancesFields: INodeProperties[] = [
 					},
 				],
 				description: 'Chatwoot Settings',
-			},
-			{
-				displayName: 'Behavior',
-				name: 'instanceSettings',
-				type: 'fixedCollection',
-				typeOptions: {
-					multipleValues: false,
-				},
-				default: { settings: {} },
-				options: [
-					{
-						displayName: 'Instance Behavior',
-						name: 'settings',
-						values: [
-							{
-								displayName: 'Reject Calls',
-								name: 'rejectCall',
-								type: 'boolean',
-								default: false,
-								description: 'Whether to automatically reject incoming calls',
-							},
-							{
-								displayName: 'Message on Reject',
-								name: 'msgCall',
-								type: 'string',
-								default: '',
-								description: 'Whether to send a message after rejecting a call, and if so, what message',
-							},
-							{
-								displayName: 'Ignore Groups',
-								name: 'groupsIgnore',
-								type: 'boolean',
-								default: false,
-								description: 'Whether to ignore messages from groups',
-							},
-							{
-								displayName: 'Always Online',
-								name: 'alwaysOnline',
-								type: 'boolean',
-								default: false,
-								description: 'Whether to keep the status always set to Online',
-							},
-							{
-								displayName: 'Read Messages',
-								name: 'readMessages',
-								type: 'boolean',
-								default: false,
-								description: 'Whether to automatically mark messages as read',
-							},
-							{
-								displayName: 'Read Status',
-								name: 'readStatus',
-								type: 'boolean',
-								default: false,
-								description: 'Whether to allow the API to view the Status of added contacts',
-							},
-							{
-								displayName: 'Sync History',
-								name: 'syncFullHistory',
-								type: 'boolean',
-								default: false,
-								description: 'Whether to synchronize the full message history with the API',
-							},
-						],
-					},
-				],
-				description: 'Instance behavior',
 			},
 			{
 				displayName: 'Proxy',

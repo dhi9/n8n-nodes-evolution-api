@@ -408,11 +408,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
@@ -615,14 +615,14 @@ export const integrationsFields: INodeProperties[] = [
 						name: 'name',
 						type: 'string',
 						default: '',
-						description: 'Variable name',
+						description: 'Variáble name',
 					},
 					{
 						displayName: 'Variable Value',
 						name: 'value',
 						type: 'string',
 						default: '',
-						description: 'Variable value',
+						description: 'Variáble value',
 					},
 				],
 			},
@@ -814,11 +814,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
@@ -1198,11 +1198,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{
@@ -1545,11 +1545,11 @@ export const integrationsFields: INodeProperties[] = [
 				value: 'equals',
 			},
 			{
-				name: 'Starts with',
+				name: 'Starts With',
 				value: 'startsWith',
 			},
 			{
-				name: 'Ends with',
+				name: 'Ends With',
 				value: 'endsWith',
 			},
 			{

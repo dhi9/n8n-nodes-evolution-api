@@ -13,7 +13,7 @@ export const chatOperations: INodeProperties = {
 	options: [
 		{
 			name: 'Check Number',
-			action: 'Check number on WhatsApp',
+			action: 'Check number on whats app',
 			description: 'Checks if a number is registered on WhatsApp',
 			value: 'check-number',
 		},
